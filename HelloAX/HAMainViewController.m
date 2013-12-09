@@ -45,16 +45,19 @@
     _headingLabel.textColor = [UIColor blackColor];
     _headingLabel.font = [UIFont fontWithName:HEADING_FONT size:HEADING_FONT_SIZE];
     _headingLabel.textAlignment = NSTextAlignmentCenter;
+    _headingLabel.accessibilityTraits |= UIAccessibilityTraitHeader;
     [self.view addSubview:_headingLabel];
 
     _plusButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_plusButton setImage:[UIImage imageNamed:@"image2-plus"] forState:UIControlStateNormal];
     [_plusButton addTarget:self action:@selector(incrementDots:) forControlEvents:UIControlEventTouchUpInside];
+    _plusButton.accessibilityLabel = @"Add dot";
     [self.view addSubview:_plusButton];
 
     _minusButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_minusButton setImage:[UIImage imageNamed:@"image1-minus"] forState:UIControlStateNormal];
     [_minusButton addTarget:self action:@selector(incrementDots:) forControlEvents:UIControlEventTouchUpInside];
+    _minusButton.accessibilityLabel = @"Remove dot";
     [self.view addSubview:_minusButton];
 
     _dotView = [HADotView new];
