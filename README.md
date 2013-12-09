@@ -8,7 +8,7 @@ The application consists of:
 * Two image buttons
 * A custom-drawn view
 
-The application can be used to easily live code accessibility demos, adding labels, traits, etc. to the header / buttons as well as creating an accessibility container with the custom-drawn view. An example of added AX is found in the AX branch of this project.
+The application can be used to easily live code accessibility demos, adding labels, traits, etc. to the header / buttons as well as creating an accessibility container with the custom-drawn view. An example of added AX is found in the [AX branch](https://github.com/spanage/HelloAX-IOS/tree/AX) of this project.
 
 ### Screenshot
 
